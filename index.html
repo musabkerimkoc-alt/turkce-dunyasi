@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows XP Arka Planı</title>
+    <title>Mustafa Kemal Atatürk'ün Hayatı</title>
     <style>
-        /* Sayfa kenarlarındaki varsayılan boşlukları sıfırlıyoruz */
+        /* Genel sayfa sıfırlamaları */
         * {
             margin: 0;
             padding: 0;
@@ -13,29 +13,114 @@
         }
 
         body {
-            /* Verdiğiniz resim bağlantısını arka plan yapıyoruz */
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBcFS1B-OjW5TFyyNqC9hSDv89B5fDhBm-QsifYEPqvg&s=10');
-            
-            /* Resmin ekranı tamamen kaplamasını sağlar */
+            /* Windows XP Arka Planı */
+            background-image: url('https://gstatic.com');
             background-size: cover;
-            
-            /* Resmin tekrar etmesini engeller */
             background-repeat: no-repeat;
-            
-            /* Resmi ekranda ortalar */
             background-position: center center;
-            
-            /* Sayfa kaydırılsa bile resmin sabit kalmasını sağlar */
             background-attachment: fixed;
+            min-height: 100vh;
             
-            /* Sayfanın en az ekran yüksekliği kadar olmasını zorunlu kılıyoruz */
-            min-height: 100vh; 
+            /* Yazı stilleri */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #222222;
+            line-height: 1.6;
+            
+            /* İçeriği dikeyde ve yatayda ortalamak için */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Hayat hikayesini barındıran şeffaf kutu */
+        .ataturk-paneli {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(5px); /* Arka planı hafifçe bulanıklaştırarak okunabilirliği artırır */
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* Ana Başlık */
+        .ana-baslik {
+            text-align: center;
+            color: #0b3c5d;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 3px solid #328cc1;
+            padding-bottom: 15px;
+        }
+
+        /* Tarih ve alt başlık vurguları */
+        .tarih-seridi {
+            margin-top: 25px;
+        }
+
+        .donem-basligi {
+            font-size: 1.3rem;
+            color: #d9534f;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Paragraflar */
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Özlü Söz Bölümü */
+        .ozlu-soz {
+            margin-top: 35px;
+            padding: 20px;
+            background: rgba(11, 60, 93, 0.1);
+            border-left: 5px solid #0b3c5d;
+            font-style: italic;
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 0 8px 8px 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- Web sayfanızın içeriklerini buraya ekleyebilirsiniz -->
+    <div class="ataturk-paneli">
+        <h1 class="ana-baslik">Mustafa Kemal Atatürk</h1>
+        
+        <div class="tarih-seridi">
+            <h2 class="donem-basligi">1881 - Çocukluk ve Eğitim Hayatı</h2>
+            <p>Mustafa Kemal Atatürk, 1881 yılında Selanik'te doğdu. Annnesi Zübeyde Hanım, babası Ali Rıza Efendi'dir. Eğitim hayatına Mahalle Mektebi'nde başlamış, ardından Şemsi Efendi Okulu'na devam etmiştir. Askerlik mesleğine olan ilgisi nedeniyle Selanik Askeri Rüştiyesi ve Manastır Askeri İdadisi'ni başarıyla bitirmiştir. İstanbul Harp Okulu ve Harp Akademisi'nden Kurmay Yüzbaşı rütbesiyle mezun olmuştur.</p>
+        </div>
+
+        <div class="tarih-seridi">
+            <h2 class="donem-basligi">1911-1918 - Askeri Başarılar ve Cepheler</h2>
+            <p>Trablusgarp Savaşı, Balkan Savaşları ve I. Dünya Savaşı'nda önemli görevler üstlendi. Özellikle Çanakkale Savaşı'nda "Anafartalar Kahramanı" olarak kazandığı askeri deha ve başarı, adını tüm dünyaya duyurdu. Kafkas ve Suriye-Filistin cephelerinde de vatan topraklarını savunmak için üstün kararlılık gösterdi.</p>
+        </div>
+
+        <div class="tarih-seridi">
+            <h2 class="donem-basligi">1919-1923 - Milli Mücadele ve Cumhuriyet</h2>
+            <p>19 Mayıs 1919'da Samsun'a çıkarak Kurtuluş Savaşı'nı başlattı. Amasya, Erzurum ve Sivas genelgeleri ile kongrelerini düzenleyerek milli iradeyi bir araya getirdi. 23 Nisan 1920'de TBMM'nin açılmasıyla meclis hükümeti başkanlığına seçildi. Başkomutan olarak yönettiği Sakarya Meydan Muharebesi ve Büyük Taarruz ile işgalci güçleri Anadolu'dan temizledi. 29 Ekim 1923'te Cumhuriyeti ilan ederek Türkiye Cumhuriyeti'nin ilk Cumhurbaşkanı oldu.</p>
+        </div>
+
+        <div class="tarih-seridi">
+            <h2 class="donem-basligi">1923-1938 - Devrimler ve Sonsuzluk</h2>
+            <p>Cumhurbaşkanlığı döneminde Türkiye'yi muasır medeniyetler seviyesine ulaştırmak amacıyla siyasi, hukuki, ekonomik ve sosyal alanlarda köklü devrimler gerçekleştirdi. Harf Devrimi, Kılık Kıyafet Kanunu, Kadın Hakları ve Soyadı Kanunu gibi yeniliklerle modern Türkiye'nin temellerini attı. 10 Kasım 1938'de Dolmabahçe Sarayı'nda hayata gözlerini yumdu.</p>
+        </div>
+
+        <div class="ozlu-soz">
+            "Benim nâçiz vücudum bir gün elbet toprak olacaktır, fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır."<br>- Mustafa Kemal Atatürk
+        </div>
+    </div>
 
 </body>
 </html>
